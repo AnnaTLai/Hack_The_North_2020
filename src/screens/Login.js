@@ -16,7 +16,7 @@ export default class Login extends Component {
   render() {
     return (
       <div className="background">
-          <Link href="#" variant="body2">
+          <Link href="/" variant="body2">
                   {"< Back to Home"}
                 </Link>
         <text className="whiteheading">
