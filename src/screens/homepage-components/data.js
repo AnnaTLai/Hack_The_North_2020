@@ -38,8 +38,29 @@ const projs = [
         id: 6,
         name: "Robot for Race Competition",
         school: "McMaster University",
-        img: "https://cdn2.vectorstock.com/i/1000x1000/73/96/cute-robot-running-funny-personal-robotic-vector-33247396.jpg",
+        img: "https://miro.medium.com/max/8640/1*UsmiJ4IzXi6U9svKjB22zw.jpeg",
         cat: "Hardware Design"
+    }, 
+    {
+        id: 7, 
+        name: "Navigation App that Avoids Areas of High COVID Infection",
+        school: "University of British Columbia",
+        img: "https://specials-images.forbesimg.com/imageserve/5e6f9b7337d0440006bc8de5/960x0.jpg?fit=scale",
+        cat: "Health"
+    },
+    {
+        id: 8, 
+        name: "Anonymous Addiction Management App",
+        school: "Ryerson University",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGIj7zDw7Of5mmZ1L0_weOu6irX5Qf-gnsHg&usqp=CAU",
+        cat: "Mobile App"
+    },
+    {
+        id: 9,
+        name: "Virtual Reality Soccer Game",
+        school: "Pierre Elliot Trudeau HS",
+        img: "https://3.bp.blogspot.com/-vQAGozzmpAo/VYKw9k77_9I/AAAAAAAAAEQ/Zrohzf4Acps/s1600/penalty%2Bspot.jpg",
+        cat: "Virtual Reality"
     }
 ]
 

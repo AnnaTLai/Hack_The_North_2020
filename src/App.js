@@ -18,11 +18,7 @@ function App() {
           <img src={logo} alt="logo"/>
           <nav className="navbar-elements">
             <ul className="links">
-              <li><Link to={'/'}> HomePage </Link></li>
-              <li><Link to={'/createproject'}> CreateProject </Link></li>
-              <li><Link to={'/project'} > Projects </Link></li>
-              <li><Link to={'/dashboard'} > Dashboard </Link></li>
-              <li><Link to={'/login'} ><button>Login</button></Link></li>
+              <li><Link to={'/login'} ><button className="loginButton">Login</button></Link></li>
             </ul>
           </nav>
         </div>
