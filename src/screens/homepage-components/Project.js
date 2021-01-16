@@ -13,7 +13,7 @@ export default function Project({id, name, img, school, cat}) {
                 <h2>{name}</h2>
                 <h3>{cat}</h3>
                 <h3>{school}</h3>
-                <Link to={'/'} className="project-link-button">
+                <Link to={'/project'} className="project-link-button" >
                     More Details
                 </Link>
             </div>

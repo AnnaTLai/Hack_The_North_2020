@@ -12,8 +12,20 @@ export default class CreateProjects extends Component {
     render() {
         return (
             <div>
-                <h1> {this.state.title} </h1>
+                <h2>Project Name</h2>
+                <form>
+                    Name:
+                    <input type="text" name="name" />
+                    Project Media:
+                    <input type="file" name="fileToUpload" id="fileToUpload"/>
+                    Project Description:
+                    <input type="text" name="proj-description"/>
+                    Who We Are Looking For:
+                    <input type="text" name="looking-for"/>
+                    <input type="submit" value="Submit" name="submit"></input>
+                </form>
             </div>
         )
     }
 }
+
