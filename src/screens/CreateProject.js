@@ -11,10 +11,10 @@ export default class CreateProjects extends Component {
 
     render() {
         return (
-            <div>
-                <h2>Project Name</h2>
-                <form>
-                    Name:
+            <div className="createproj-section">
+                <h2>Let’s get you ready for take-off.</h2>
+                <form className="create-form">
+                    Project Name:
                     <input type="text" name="name" />
                     Project Media:
                     <input type="file" name="fileToUpload" id="fileToUpload"/>

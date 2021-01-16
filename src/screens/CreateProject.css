@@ -1,0 +1,9 @@
+.createproj-section {
+    align-content: center;
+}
+
+
+.create-form {
+    display: flex;
+    padding: 1.5rem;
+}

@@ -5,6 +5,7 @@ import logo from './logo.png'
 import home from './home.jpg'
 import user from './profile.jpg'
 
+
 // import the screens
 import CreateProject from './screens/CreateProject';
 import HomePage from './screens/HomePage';
@@ -20,8 +21,8 @@ function App() {
       <Router>
         <div>
           <div className="navbar">
-            <img src={logo} alt="logo"/>
-            <form><input input="hidden" value="Search for your next adventure..."></input></form>
+            <Link to={'/'} ><img src={logo} alt="logo"/></Link>
+            <form><input input="text" placeholder="Search for your next adventure..."></input></form>
             <nav className="navbar-elements">
               <ul className="links">
                 <li><Link to={'/login'} ><button className="loginButton">Login</button></Link></li>
@@ -45,6 +46,7 @@ function App() {
         <div>
           <div className="navbar">
             <img src={logo} alt="logo"/>
+            <form><input input="text" placeholder="Search for your next adventure..."></input></form>
             <nav className="navbar-elements">
               <ul className="links">
                 <li><Link to={'/createProject'}><button className="launchButton">Launch Project</button></Link></li>
