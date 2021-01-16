@@ -1,0 +1,26 @@
+.project {
+    background: #fff;
+    margin-bottom: 2rem;
+    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s linear;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: 0.25rem;
+}
+
+.project img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.project-footer {
+    padding: 1.5rem;
+}
+
+.project-footer h3,
+.project-footer h2 {
+  margin-bottom: 0.3rem;
+}

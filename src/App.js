@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import React from 'react';
 import './App.css';
+import logo from './logo.png'
 
 // import the screens
 import CreateProject from './screens/CreateProject';
@@ -14,7 +15,7 @@ function App() {
     <Router>
       <div>
         <div className="navbar">
-          <h2> Welcome to our page, folks! </h2>
+          <img src={logo} alt="logo"/>
           <nav className="navbar-elements">
             <ul className="links">
               <li><Link to={'/'}> HomePage </Link></li>
