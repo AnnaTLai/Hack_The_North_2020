@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 .project {
     background: #fff;
     margin-bottom: 2rem;
@@ -24,6 +26,7 @@
 .project-footer h3,
 .project-footer h2 {
   margin-bottom: 0.3rem;
+  font-family: Poppins;
 }
 
 .project-link-button {
@@ -35,7 +38,7 @@
 	display:inline-block;
 	cursor:pointer;
 	color:#666666;
-	font-family:Arial;
+	font-family: Poppins;
 	font-size:15px;
 	font-weight:bold;
 	padding:6px 24px;

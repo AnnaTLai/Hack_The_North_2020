@@ -3,7 +3,7 @@
 .background {
   background: linear-gradient(198.9deg, #001750 42.87%, #4578f9 85.45%);
   height: 100vh;
-  width: 100vh;
+  width: 100%;
 }
 
 .whiteheading {
@@ -31,6 +31,26 @@
   line-height: 36px;
   text-align: center;
   color: #000000;
+  width: 50%;
+}
+
+.text-container {
+  padding: 0 1rem;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.text-field {
+  padding: 1rem;
+}
+
+.back-to-home {
+  color: white;
+  font-size: 1rem;
 }
 
 .whitebackground {
@@ -58,11 +78,29 @@
 }
 
 .button {
-  background-color: #4578f9;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  width: 522px;
-  height: 60px;
+	box-shadow:inset 0px 1px 6px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:17px;
+	font-weight:bold;
+	padding:7px 39px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+
+.button:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.button:active {
+	position:relative;
+	top:1px;
 }
 
 .buttonfont {

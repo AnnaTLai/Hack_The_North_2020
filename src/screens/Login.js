@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Button, Container, TextField, Link } from "@material-ui/core";
+import { Grid, Container, TextField, Link } from "@material-ui/core";
 import "./Login.css";
 import logo from "../logo.png";
 
@@ -8,8 +8,8 @@ export default class Login extends Component {
     super(props);
 
     this.state = {
-      title: "User login page",
-      loginoage: true,
+      title: "User Login Page",
+      loginPage: true
     };
   }
 
@@ -17,54 +17,64 @@ export default class Login extends Component {
     return (
       <div className="background">
           <Link href="/" variant="body2">
-                  {"< Back to Home"}
-                </Link>
+            <text className="back-to-home">{"< Back to Home"}</text>
+          </Link>
         <text className="whiteheading">
           {" "}
-          Shoot for the moon, but do it together{" "}
+          Shoot for the moon, but do it together {" "}
         </text>
         <Container>
           <form className="whitebackground">
-            <Grid container spacing={3}>
+            <Grid container spacing={3} alignItems="center">
               <Grid item xs={12}>
-                <img src={logo} className="image" />
+                <img src={logo} className="image" alt="logo"/>
                 <Grid container spacing={2}>
                   <Grid item xs={12}>
-                    <text className="text"> Name </text>
-                    <TextField
-                      fullWidth
-                      label="Email"
-                      name="email"
-                      ize="small"
-                      variant="outlined"
-                      margin="8"
-                    />
+                    <div className="text-container">
+                      <text className="text"> Email </text>
+                    </div>
+                    <div className="text-field">
+                      <TextField
+                        fullWidth
+                        label="Email"
+                        name="email"
+                        size="small"
+                        variant="outlined"
+                      />
+                    </div>
                   </Grid>
                   <Grid item xs={12}>
-                    <text className="text"> Password </text>
-                    <TextField
-                      fullWidth
-                      label="Password"
-                      name="password"
-                      size="small"
-                      type="password"
-                      variant="outlined"
-                    />
+                    <div className="text-container">
+                      <text className="text"> Password </text>
+                    </div>
+                    <div className="text-field">
+                      <TextField
+                        fullWidth
+                        label="Password"
+                        name="password"
+                        size="small"
+                        type="password"
+                        variant="outlined"
+                      />
+                    </div>
                   </Grid>
                 </Grid>
               </Grid>
 
-               <Grid item xs={12}>
-              <button className = 'button'
-                >
-                  <text className = 'buttonfont'> LOGIN</text>
-                </button>
+               <Grid item xs={12} alignItems="center">
+                  <div className="submit-button">
+                    <Link href="/dashboard" variant="body2">
+                      <text className="button" onClick={() => this.setState({loginPage: false})}>Submit</text>
+                    </Link>
+                  </div>
               </Grid>                
 
               <Grid item xs={12}>
-                <Link href="#" variant="body2">
-                  {"Don't have an accout Yet? Sign Up here"}
-                </Link>
+                <div className="submit-button">
+                  <Link href="#" variant="body2">
+                    {"Don't have an account yet? Sign up here!"}
+                  </Link>
+                </div>
               </Grid>
             </Grid>
           </form>

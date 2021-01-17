@@ -1,0 +1,12 @@
+.project-section {
+    display: grid;
+    position: absolute;
+    width: 75%;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    border-radius: 28px;
+
+    grid-template-rows: 1fr 1fr;
+    row-gap: 2rem;
+    padding: 1rem;
+}

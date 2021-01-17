@@ -9,7 +9,6 @@ export default class HomePage extends Component {
             title: 'Homepage'                 
         }
     }
-
     render() {
         return (
             <div>
