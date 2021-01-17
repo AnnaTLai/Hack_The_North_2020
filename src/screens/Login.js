@@ -7,7 +7,7 @@ export default class Login extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
+    this.State = {
       title: "User login page",
       loginoage: true,
     };

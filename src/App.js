@@ -4,6 +4,7 @@ import "./App.css";
 import logo from "./logo.png";
 import home from "./home.jpg";
 import user from "./profile.jpg";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import the screens
 import CreateProject from "./screens/CreateProject";
@@ -13,11 +14,11 @@ import UserDashboard from "./screens/UserDashboard";
 import Login from "./screens/Login";
 
 function App() {
-  const [login, setLogin] = useState(false);
-  const [loginpage] = useState(true);
+  const [login, setLogin] = useState(true);
+  const [loginpage] = useState(false);
 
   if (login === false) {
-    if (loginpage == true) {
+    if (loginpage === false) {
       return (
         <Router>
         <Switch>
