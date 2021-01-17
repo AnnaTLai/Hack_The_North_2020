@@ -4,6 +4,7 @@ import "./App.css";
 import logo from "./logo.png";
 import home from "./home.jpg";
 import user from "./profile.jpg";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 // import the screens
