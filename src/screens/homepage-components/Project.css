@@ -23,10 +23,16 @@
 	display: inline-block;
 }
 
-.project-footer h3,
-.project-footer h2 {
+.project-footer h3 {
   margin-bottom: 0.3rem;
   font-family: Poppins;
+  font-size: 1rem;
+}
+
+.project-footer h2 {
+	margin-bottom: 0.3rem;
+  font-family: Poppins;
+  font-size: 2rem;
 }
 
 .project-link-button {

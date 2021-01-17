@@ -1,32 +1,33 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import './UserDashboard.css'
+import Projects from './homepage-components/Project'
+import projs from './homepage-components/data'
 
-export default class UserDashboard extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            title: 'Hello, Hack The North'                 
-        }
-    }
-
-    render() {
-        return (
-            <div className="user-dashboard">
-                <div className="title">
-                    <h1> {this.state.title }</h1>
-                </div>
-                <article className="project-section">
-                    <div>
-                        hi
-                    </div>
-                </article>
-                <article className="project-section">
-                    <div>
-                        hi
-                    </div>
-                </article>
+export default function UserDashboard () {
+    const [projects, setProjects] = useState(projs.slice(1, 4)) // projs = list of projects
+    return (
+        <div className="user-dashboard">
+            <div className="title">
+                <h1>Hello, Hack The North</h1>
             </div>
-        )
-    }
+            <article>
+                <h3>My Projects</h3>
+                <div className="proj">
+                    {projs.slice(1, 4).map((item) => {
+                        return (
+                        <Projects key={item.id} {...item}/>
+                        )
+                    })}
+                </div>
+                <h3>Your Favorites</h3>
+                <div className="proj">
+                    {projs.slice(4, 7).map((item) => {
+                        return (
+                        <Projects key={item.id} {...item}/>
+                        )
+                    })}
+                </div>
+            </article>
+        </div>
+    )
 }
