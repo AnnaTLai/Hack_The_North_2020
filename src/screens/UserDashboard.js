@@ -4,7 +4,7 @@ import Projects from './homepage-components/Project'
 import projs from './homepage-components/data'
 
 export default function UserDashboard () {
-    const [projects, setProjects] = useState(projs.slice(1, 4)) // projs = list of projects
+    
     return (
         <div className="user-dashboard">
             <div className="title">

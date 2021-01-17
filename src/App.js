@@ -22,14 +22,14 @@ function App() {
     if (loginpage === true) {
       return (
         <Router>
-          <Switch>
-            <Route path="/" exact component={HomePage}></Route>
-            <Route path="/login" component={Login}></Route>
-            <Route path="/createProject" component={CreateProject}></Route>
-            <Route path="/project" component={ProjectPage}></Route>
-            <Route path="/dashboard" component={UserDashboard}></Route>
-          </Switch>
-      </Router>
+            <Switch>
+              <Route path="/" exact component={HomePage}></Route>
+              <Route path="/login" component={Login}></Route>
+              <Route path="/createProject" component={CreateProject}></Route>
+              <Route path="/project" component={ProjectPage}></Route>
+              <Route path="/dashboard" component={UserDashboard}></Route>
+            </Switch>
+        </Router>
       )
       
     } else {
@@ -41,11 +41,26 @@ function App() {
               <form>
                 <input
                   input="hidden"
-                  value="Search for your next adventure..."
+                  placeholder="Search for your next adventure..."
                 ></input>
               </form>
               <nav className="navbar-elements">
                 <ul className="links">
+                  <li>
+                    <Link to={"/createProject"}>
+                      <button className="launchButton">Launch Project</button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"}>
+                      <img src={home} alt="home"></img>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/dashboard"}>
+                      <img src={user} alt="user"></img>
+                    </Link>
+                  </li>
                   <li>
                     <Link to={"/login"}>
                       <button className="loginButton" onClick={() => setLoginpage(true)}>Login</button>
@@ -74,7 +89,7 @@ function App() {
             <form>
                 <input
                   input="hidden"
-                  value="Search for your next adventure..."
+                  placeholder="Search for your next adventure..."
                 ></input>
               </form>
             <nav className="navbar-elements">
